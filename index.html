@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar with Banner</title>
+
+      <!-- Essential Meta Tags -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Easily install your Canon printer on your computer with simple steps. From connection to driver installation, get ready to print in minutes!">
+      <meta name="keywords" content="Install my canon printer to my computer,ij start canon">
+      <meta name="title" content="Install my canon printer to my computer - setup my printer">
+
+
+      
+   
+
+      
+ 
+      
+
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #222;
+            padding: 15px 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .logo img {
+            height: 40px;
+        }
+
+        .navbar .nav-links a {
+            font-size: 18px;
+            margin-left: 20px;
+            position: relative;
+        }
+
+        .navbar .nav-links a:hover::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #66CDAA;
+        }
+
+        /* Banner Section */
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 650px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('canon.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner-content {
+            text-align: center;
+            color: #fff;
+        }
+
+        .banner h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .banner button {
+            padding: 15px 30px;
+            font-size: 20px;
+            background-color: #66CDAA;
+            border: none;
+            cursor: pointer;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .banner button:hover {
+            background-color: #66CDAA;
+            transform: scale(1.05);
+        }
+
+        /* Content Section */
+        .content-section {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 20px;
+            padding: 50px 30px;
+            align-items: center;
+        }
+
+        .content-left h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .content-left p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .vertical-line {
+            width: 2px;
+            background-color: #66CDAA;
+            height: 100%;
+        }
+
+        .content-right img {
+            width: 100%;
+            max-width: 450px;
+            height: 450px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Main Content Styling */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        section h2 {
+            font-size: 32px;
+            color: #333;
+            border-left: 4px solid #66CDAA;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        li {
+            margin: 12px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar .nav-links a {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            .banner {
+                height: 300px;
+            }
+
+            .banner h1 {
+                font-size: 32px;
+            }
+
+            .banner button {
+                font-size: 16px;
+            }
+
+            .content-section {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .vertical-line {
+                display: none;
+            }
+
+            .content-right img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#preparation">Preparation</a>
+            <a href="#installation">Installation</a>
+            <a href="#troubleshooting">Troubleshooting</a>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Install my canon printer to my computer</h1>
+            <button onclick="alert('Learn More clicked!')">Let's Get Started</button>
+        </div>
+    </section>
+
+    <main>
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="content-left">
+            <h2>Install my canon printer to my computer</h2>
+            <p>
+                Printers are essential devices for home and office productivity. If you recently purchased a Canon printer or are trying to reinstall your existing printer,
+                 you've come to the right place. the process of connecting your Canon printer to your computer and ensuring it works efficiently.
+            </p>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="content-right">
+            <img src="canon-banner.jpg" alt="Placeholder Image">
+        </div>
+    </section>
+
+        <div class="one" style="background-color: #FAF9F6; background-size: cover; width: 100%;">
+        <section id="preparation">
+            <h2>Before You Start</h2>
+            <p>Preparation is key to a smooth installation process. Here’s what you need:</p>
+            <ul>
+                <li><strong>Canon Printer:</strong> Note the model name and number for reference.</li>
+                <li><strong>Computer:</strong> Ensure your PC or Mac meets the printer's compatibility requirements</li>
+                <li><strong>Connection Type:</strong>  Decide whether you’ll connect via USB cable or Wi-Fi.
+                </li>
+                <li><strong>Printer Drivers:</strong> Download the latest drivers for your Canon printer.</li>
+            </ul>
+        </section>
+    </div>
+
+
+        <section id="installation">
+            <h2>How to Install my canon printer to my computer?</h2>
+
+            <div class="one" style="background-color:#FAF9F6; background-size: cover; width: 100%;">
+            <h3>Installing via USB</h3>
+            <ol>
+                <li>Connect the printer to your computer using the USB cable provided.</li>
+                <li>Power on your printer.</li>
+                <li>Download and install the Canon printer drivers if they don’t install automatically..</li>
+                <li>Follow the on-screen instructions to complete the setup.</li>
+            </ol>
+            <br>
+
+            <h3>Installing Canon Printers on Mac</h3>
+            <ol>
+                <li>Go to System Preferences and select Printers & Scanners.</li>
+                <li>Click the “+” icon to add a printer.</li>
+                <li>Select your Canon printer from the list (USB or Wi-Fi).</li>
+                <li>If prompted, download the necessary drivers or install them manually.</li>
+            </ol>
+
+            <br>
+
+            <h3>Setting Up Your Canon Printer via Wi-Fi</h3>
+            <ol>
+                <li>Turn on your printer and enable Wi-Fi mode (refer to your printer’s manual).</li>
+                <li>Connect your printer to the Wi-Fi network:</li>
+                <ul>
+                    <li>Use the printer's touchscreen or buttons to select the network and enter the password.</li>
+                </ul>
+                <li>Download the Canon drivers on your computer and follow the installation prompts to detect the printer on the network.</li>
+       
+            </ol>
+
+        </section>
+        </div>
+
+
+        <div class="one" style="background-color: #FAF9F6; background-size: cover; width: 100%;">
+            <section id="Troubleshooting">
+                <h2>Troubleshootingt</h2>
+                <p>If you're having trouble setting up your Canon printer, here are some common problems and solutions:</p>
+                <ul>
+                    <li><strong>1. Printer not detected</strong> Make sure the printer is turned on and connected to your computer or network.</li>
+                    <li><strong>2. Driver issues</strong> Make sure you've downloaded the correct drivers for your printer model and operating system.</li>
+                    <li><strong>3. Print jobs are stuck in the queue</strong>  Go to Control Panel > Devices and Printers (Windows) or Printers and Scanners (Mac), cancel any stuck print jobs, and try printing again.
+                    </li>
+                    <li><strong>4. Wi-Fi connection issues</strong> Double-check that the printer is within range of your Wi-Fi router.</li>
+                </ul>
+            </section>
+        </div>
+
+        <section class="content-sectionn" style="width: 100%;">
+            <div class="content">
+                <h2>Conclusion</h2>
+                <p>
+                    Congratulations! You have successfully installed your Canon printer on your computer. Whether you are using a USB or Wi-Fi connection, it should now be easy for you to repeat the process or troubleshoot.
+
+                    If you encounter any further problems or need additional assistance, don't hesitate to check the Canon support website or contact customer service.
+                    
+                </p>
+            </div>
+            
+        </section>
+    </main>
+
+</body>
+</html>
